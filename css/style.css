@@ -1,3 +1,233 @@
-body {
-    text-align: center;
+@media only screen and (min-width: 300px) and (max-width: 750px) {
+    #play-header {
+        margin: 0 auto;
+        margin-top: 2%!important;
+        text-align: center!important;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column!important;
+    }
 }
+
+body {
+    background: url('../images/grass.jpg') no-repeat fixed center;
+    text-align: center;
+    margin:0 auto;
+    height: 100%;
+}
+
+
+#lives {
+    color:#ff0000;
+}
+
+
+#winner {
+    background: url('../images/laurel.png') no-repeat fixed center;
+    text-align: center;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+#winner h1 {
+    color: orange;
+}
+
+
+#winner div {
+    font-size: 20px;
+}
+
+
+.fa-key {
+    margin-top: 15px;
+    color: #f6bb50;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.fa-gem {
+    margin-top: 15px;
+    color: #f6bb50;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.fa-heart {
+    color: #ff0000;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+#play-header div {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+#lives-text {
+    margin-top: 10px;
+    padding: 5px;
+    height: 100%;
+    border-radius: 4px;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+#play-header {
+    margin: 0 auto;
+    margin-top: 2%!important;
+    text-align: center!important;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+.fa-undo-alt {
+    color: orange;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+
+.fa-info-circle {
+     margin-top: 15px;
+     color: #4e66d2;
+     font-size: 25px;
+}
+
+
+#game-header {
+    color: #5fc148;
+}
+
+
+.displayNone {
+    display: none;
+}
+
+
+/* Modal Header w3schools.com*/
+/* The Modal (background) */
+.info-modal,.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 200px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: .4s;
+    animation-name: animatetop;
+    animation-duration: .4s;
+}
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px; 
+        opacity: 0;
+    } 
+    to {
+        top: 0; 
+        opacity: 1;
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px; 
+        opacity: 0;
+    }
+    to {
+        top: 0; 
+        opacity: 1;
+    }
+}
+
+/* The Close Button */
+.info-close,.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.info-close,.close:hover,
+.info-close,.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.info-modal-header {
+    padding: 2px 16px;
+    background-color: #7789dc;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+#modal-msg {
+    color: #ff0000;
+}
+
+
+.info-modal-body {
+    text-align: left;
+}
+
+#win-info ul{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#win-info li{
+    font-size: 20px;
+    font-weight: bold;
+    list-style-type: none; 
+}
+
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+

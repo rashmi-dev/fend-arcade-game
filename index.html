@@ -2,10 +2,58 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="main">
+        <h1 id="game-header">Arcade Game</h1>
+        <div id="play-header">
+            <div><i class="fas fa-info-circle"></i></div>
+            <div id="lives-text">Lives:<span id="lives">10</span></div>
+            <div><i class="fas fa-key"></i>:<span id="key">0</span></div>
+            <div id="refresh"><i class="fas fa-undo-alt"></i></div>
+            <div><i class="fas fa-heart"></i>:<span id="hrt">0</span></div>
+            <div><i class="far fa-gem"></i>:<span id="gem">0</span></div>
+        </div>
+    </div>
+    <!-- Modal content w3schools.com-->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h1 id="warn">Winner!</h1>
+          </div>
+          <div class="modal-body">
+            <h2 id="modal-msg"></h2>
+             <ul id="win-info" class="displayNone">
+                <li>Lives : <span id="modal-lives"></span></li>
+                <li><i class="fas fa-key"></i> : <span id="modal-key"></span></li>
+                <li><i class="fas fa-heart"></i> : <span id="modal-hrt"></span></li>
+                <li><i class="far fa-gem"></i> : <span id="modal-gem"></span></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+     <!-- Modal content w3schools.com-->
+    <div id="infoModal" class="info-modal">
+        <div class="modal-content">
+          <div class="info-modal-header">
+            <span class="info-close">&times;</span>
+            <h1 id="warn">Info</h1>
+          </div>
+          <div class="info-modal-body">
+            <ul>
+                <li>In order to win ,the player must get the key and reach the water.</li>
+                <li>The player has 10 lives.</li>
+                <li>Any moving object-player resets the player position.</li>
+                <li>The heart or gem symbol is just an extra item that the player can get and the items he/she acquires is displayed above the canvas.</li>
+            </ul>
+          </div>
+        </div>
+    </div>
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>
