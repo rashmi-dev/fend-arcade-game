@@ -6,16 +6,16 @@ Simple JavaScript canvas game where the player has to get a key and reach the wa
 
 In this game you have a player and an enemy which moves across the screen, the player has to avoid colliding with the enemy and reach the water. In this game he has to get a key before reaching the water to win. There are also objects like a heart and a gem for the user to collect but is not needed to win the game.
 
-##Getting started
+## Getting started
 
 Load the game https://rashmi-dev.github.io/fend-arcade-game/ in the browser to play the game. You can also refresh the game to re-load the game page.
 
 ## How the game works
 
 There are three important factors to consider in order to win the game.
-1. Lives :- The player has 10 lives. Each time he/she collides with the enemy, the player loses a life.
-2. Key :- Player has to get the key before going to the water to win the game.
-3. Water :- Reaching the water he/she finishes the game.
+1. ### Lives :- The player has 10 lives. Each time he/she collides with the enemy, the player loses a life.
+2. ### Key :- Player has to get the key before going to the water to win the game.
+3. ### Water :- Reaching the water he/she finishes the game.
 
 The player can also collect a gem and a heart and it is displayed on the screen.
 
