@@ -1,3 +1,4 @@
+"use strict";
 // Enemies our player must avoid
 var Enemy = function(x,y,t) {
     // Variables applied to each of our instances go here,
@@ -9,8 +10,8 @@ var Enemy = function(x,y,t) {
     //Y values :-225(last row),60/65(first row),145(middle row)
     //X value :-0,(first col) ,100 (2 column),200(3rd),300,400
     this.sprite = 'images/enemy-bug.png';
-    this.x = x;
-    this.y = y;
+    this.x = x;//x position
+    this.y = y;//y position
     this.t = t;//speed
     this.reset = false;
 };
@@ -58,6 +59,13 @@ Player.prototype.render = function() {
 
 //Player movement,increases by +50
 Player.prototype.handleInput = function(dt) {
+    if(player.lives == 0){
+            document.getElementById("lives").innerHTML = player.lives;
+            var modal = document.getElementById('myModal');
+            modal.style.display = "block";
+            document.getElementById('warn').innerHTML = "Warning!";
+            document.getElementById('modal-msg').innerHTML = "Sorry! You do not have sufficient player life to continue! Try again!";
+    }
     if(dt =='up' && this.y >= 50) {
         this.y -= 50;
     }
@@ -223,21 +231,14 @@ var allEnemies = [new Enemy(0,145,50),new Enemy(0,60,100),new Enemy(0,225,100),n
 //player collision and player lives value check.
 Player.prototype.checkCollisions = function () {
     allEnemies.forEach(function(enemy) {
-        //if the player has sufficient lives and to check for collision co ordinated of enemy and player
+        //if the player has sufficient lives and to check for collision co-ordinates of enemy and player
         if(player.lives >= 1) {
-            if(((Math.floor(enemy.x) >= Math.floor(player.x) - 40) && (Math.floor(enemy.x) <= Math.floor(player.x) + 40)) && ((Math.floor(enemy.y) >= Math.floor(player.y) - 40) && (Math.floor(enemy.y) <= Math.floor(player.y) + 40))) {
+            if(((Math.floor(enemy.x) >= Math.floor(player.x) - 60) && (Math.floor(enemy.x) <= Math.floor(player.x) + 60)) && ((Math.floor(enemy.y) >= Math.floor(player.y) - 60) && (Math.floor(enemy.y) <= Math.floor(player.y) + 60))) {
                 player.y = 350;
                 player.lives--;
                 document.getElementById("lives").innerHTML = player.lives;
             }  
         }
-        else if(player.lives == 0){
-            document.getElementById("lives").innerHTML = player.lives;
-            var modal = document.getElementById('myModal');
-            modal.style.display = "block";
-            document.getElementById('warn').innerHTML = "Warning!";
-            document.getElementById('modal-msg').innerHTML = "Sorry! You do not have sufficient player life to continue! Try again!";
-          }
     });
 };
 
