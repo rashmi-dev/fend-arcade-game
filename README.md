@@ -8,7 +8,7 @@ In this game you have a player and an enemy which moves across the screen, the p
 
 ## Getting started
 
-Load the game [https://rashmi-dev.github.io/fend-arcade-game/ in the browser to play the game]. You can also refresh the game to re-load the game page.
+Load the game [https://rashmi-dev.github.io/fend-arcade-game/] in the browser to play the game. You can also refresh the game to re-load the game page.
 
 ## How the game works
 
