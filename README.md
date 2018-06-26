@@ -2,7 +2,7 @@ fend-arcade-game
 ===============================
 Simple JavaScript canvas game where the player has to get a key and reach the water to win the game. This project uses JavaScript Object Oriented programming.
 
-##Basic Functionality
+## Basic Functionality
 
 In this game you have a player and an enemy which moves across the screen, the player has to avoid colliding with the enemy and reach the water. In this game he has to get a key before reaching the water to win. There are also objects like a heart and a gem for the user to collect but is not needed to win the game.
 
@@ -10,7 +10,7 @@ In this game you have a player and an enemy which moves across the screen, the p
 
 Load the game https://rashmi-dev.github.io/fend-arcade-game/ in the browser to play the game. You can also refresh the game to re-load the game page.
 
-##How the game works
+## How the game works
 
 There are three important factors to consider in order to win the game.
 1. Lives :- The player has 10 lives. Each time he/she collides with the enemy, the player loses a life.
@@ -20,7 +20,7 @@ There are three important factors to consider in order to win the game.
 The player can also collect a gem and a heart and it is displayed on the screen.
 
 
-##How to play the game
+## How to play the game
 
 Each time an arrow key is pressed the player moves in the direction of the arrow. The player or any object never moves beyond the canvas space. Here are some of the scenarios to help learn how to play the game.
 
